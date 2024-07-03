@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="http://fe.it-academy.by/TestForm.php" >
+
+        <fieldset style="width:300px">
+            <legend>Строка поиска</legend>
+            
+            <input type="text" name="name">
+            <input type="submit" value="Искать">
+            <br>
+        <label>
+            <input type="radio" name="radio group"
+            value="value_web" id="Checkbox_Group1_0" checked>на сайте
+        </label>
+        <label>
+            <input type="radio" name="radio group"
+            value="value_google" id="Checkbox_Group2_0" checked>в google
+        </label>
+            <lable for="">
+                <br>
+                <em>Длина запроса не более 10 символов </em>
+                
+        </fieldset>
+    </form>
+<form action="http://fe.it-academy.by/TestForm.php" >
+        <fieldset style="width:300px">
+            <legend>Строка поиска</legend>
+            
+            <input type="text" name="name" autofocus placeholder="это обязательное поле" required>
+            <input type="submit" value="Искать">
+            <br>
+        <label>
+            <input type="radio" name="radio group"
+            value="value_web" id="Checkbox_Group1_0" checked>на сайте
+        </label>
+        <label>
+            <input type="radio" name="radio group"
+            value="value_google" id="Checkbox_Group2_0" checked>в google
+        </label>
+            <lable for="">
+                <br>
+                <em>Автофокус в поле поиска</em>
+                
+        </fieldset>
+</form>
+<form action="http://fe.it-academy.by/TestForm.php" >
+    <fieldset style="width:300px">
+        <legend>Авторизируйтесь</legend>
+
+        <input type="text" name="name" autofocus placeholder="это обязательное поле" required>Логин
+        <input type="text" name="name" autofocus placeholder="это обязательное поле" required>Пароль
+        <br>
+        <label>
+       <input type="checkbox" name="val1"
+       id="chbox">Оставаться в системе
+
+    </label>
+        <br>
+        <input type="submit" value="Войти">
+        <br>
+    </fieldset>
+</form>
+<form action="http://fe.it-academy.by/TestForm.php" >
+    <fieldset style="width:300px">
+        <legend>Как вам?</legend>
+        <label>
+            <input type="radio" name="radio group"
+            value="value_fine" id="Checkbox_Group1_0">ничего
+        </label>
+            <br>
+        <label>
+            <input type="radio" name="radio group"
+            value="value_ok" id="Checkbox_Group2_0">неплохо 
+        </label>
+            <br>
+    <label>
+        <input type="radio" name="radio group"
+        value="value_good" id="Checkbox_Group3_0">хорошо 
+    </label>
+            <br>    
+    <label>
+        <input type="radio" name="radio group"
+        value="value_awesome" id="Checkbox_Group4_0">супер 
+    </label>
+            <br>
+            <input type="submit" value="Отправить">
+            <input type="hidden" name="date_voite" value="2013.12.31">
+    </fieldset>
+</form>
+<form action="http://fe.it-academy.by/TestForm.php" method="post" >
+    <fieldset style="width:300px">
+        <legend>Оставьте Ваш отзыв</legend>
+
+        <input type="text" name="name"  required>*Имя
+        <input type="text" name="name"  required>*-mail
+        <br>
+        <textarea required>
+Форма отправки
+            </textarea>
+        <br>
+        <input type="submit" value="Отправить">
+        <br>
+    </fieldset>
+</form>
+<form action="http://fe.it-academy.by/TestForm.php" >
+    <fieldset style="width:300px">
+        <legend>Города РБ</legend>
+
+<select name="list id=list">
+    <option value="1">Минск</option>
+    <option value="2">Брест</option>
+    <option value="0"selected>Гродно</option>
+    </select>
+        <input type="submit" value="Ок">
+        <br>
+    </fieldset>
+</form>
+<form action="http://fe.it-academy.by/TestForm.php" enctype="multipart/form-data" method="post" >
+
+    <fieldset style="width:300px">
+        <legend>Upload</legend>
+        Файл:
+        <input type="file" name="file_Field"
+        dir="ltr">
+        Срок хранения (года):
+        <br>
+        <input type="text" style="width:70px" name="name">
+        <input type="submit"  value="загрузить">
+        <br>
+            
+    </fieldset>
+</form>
+<form action="http://fe.it-academy.by/TestForm.php" >
+
+    <fieldset style="width:300px">
+        <legend>Строка поиска</legend>
+        <input pattern="[А-Яа-яЁё]"placeholder="только русские буквы">
+        <br>
+        <em>Телефонный номер в формате</em>
+        <br>
+        <em>+ХХХ-ХХ-ХХХХХХХ, где Х - любое числоы</em>
+
+        <input type="tel" id="phone" name="phone"placeholder="+ХХХ-ХХ-ХХХХХХХ">
+        <br>
+        <input type="submit" value="Проверить">
+        <br>
+
+            
+    </fieldset>
+</form>
+</body>
+</html>    
