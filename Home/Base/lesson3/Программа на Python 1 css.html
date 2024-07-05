@@ -4,10 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="pyth1css">
+
+    <link rel="stylesheet" href="CSS/style.css" media="screen">
+    <link rel="stylesheet" href="CSS/print.css" media="print">
+<style media="screen">
+    p{
+        color: palegreen;
+        }
+    .fi{
+        color:aquamarine;
+    }
+    h2 {
+        font-size: 14px;
+    }
+    h5{
+        font-family: sans-serif;
+    }
+    @import "CSS/style.css" screen; 
+</style>
+<style media="print">
+p{
+        color: paleturquoise;
+        }
+        @import "CSS/print.css" print;
+</style>
 </head>
-<body>
-    <h1 align="center">HOW-TO: Программа на Python, Часть 1</h1>
+<body style="background-color:oldlace;>
+    <h1 align="center"  class="pri">HOW-TO: Программа на Python, Часть 1</h1>
 
     <ul>
         <li>
@@ -17,14 +40,14 @@
             <em>Программа на Python — часть 2</em>
         </li>
         <li>
-            <em>Программа на Python — часть 3</em>
+            <em class="vip">Программа на Python — часть 3</em>
         </li>
     </ul>
 
     <h2>Содержание</h2>
 
     <h3>HOW-TO: Программа на Python, Часть 1</h3>
-
+    
     <ul>
         <li>
             <u>Наша первая программа</u>
@@ -33,7 +56,7 @@
             <u>Пример цикла For</u>
         </li>
     </ul>
-<p>
+<p class="p">
     Из множества существующих языков программирования Python — один из самых лёгких
     в изучении. Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился.
     Хотя Python входит в состав большинства дистрибутивов Linux, на него часто не
@@ -102,7 +125,7 @@
         &nbsp;&nbsp;&nbsp;&nbsp;print cntr</font>
         <br>
         <br>
-        <em>Не забудьте поставить символ табуляции перед строкой «print cntr».</em> Это важно. В
+        <em class="fi">Не забудьте поставить символ табуляции перед строкой «print cntr».</em> Это важно. В
     Python для указания на блоки кода используются не круглые «(» и фигурные «{» скобки
     как в других языках программирования, а отступы.
 </p>    

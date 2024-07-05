@@ -1,0 +1,14 @@
+#test{
+    text-align: right;
+    color: blue;
+    font-style: italic;
+}
+.vip{
+    color: darkcyan;
+}
+.super{
+    font-style: normal;
+}
+.b{
+    text-align:end;
+}
