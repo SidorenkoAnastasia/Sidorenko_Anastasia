@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>site</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>  
+<style>
+    caption{
+        caption-side: bottom;
+    }
+    th{
+      background-color: rgb(60, 49, 49);
+    }
+    tr:nth-child(odd){
+        background-color: rgb(113, 118, 251);
+    }
+    td:first-child{
+        font-weight: bold;
+    }
+    td{
+      border-right: dotted 2px gray;
+      border-bottom: dotted 2px gray;
+    }
+    tr:hover {
+      background-color: rgb(81, 249, 193);
+    }
+ .button {   background-color:blue;   border: none;   padding: 15px 50px;   text-align: center;   text-decoration: none;   display: inline-block;   font-size: 14px;   margin: 2px 3px;   cursor: pointer;
+}
+
+
+</style>
+</head>
+<body>
+    <table>
+      <caption>ДАННЫЕ О СОТРУДНИКАХ</caption>
+
+      <tr>
+          <th>ФИО</th>
+          <th>пол</th>
+          <th>должность</th>
+          <th>дата рож.</th>
+          <th>Данные 01</th>
+          <th>Данные 02</th>
+      </tr>
+
+
+      <tr id="clickme">
+          <td>Иванов Иван Иванович</td>
+          <td>М</td>
+          <td>начальник</td>
+          <td>01.01.1960</td>
+          <td>4567</td>
+          <td>3453</td>
+      </tr>
+      <tr id="clickme2">
+          <td>Петрова Илона Петровна</td>
+          <td>Ж</td>
+          <td>Секретарь</td>
+          <td>01.01.1989</td>
+          <td>98795</td>
+          <td>46523</td>
+      </tr>
+
+      <tr id="clickme3">
+          <td>Сидоров Илья Игоревичь</td>
+          <td>М</td>
+          <td>бухгалтер</td>
+          <td>01.01.1979</td>
+          <td>743234</td>
+          <td>987979</td>
+      </tr>
+      <tr id="clickme4">
+          <td>Пупин Фёдор Фёдорович</td>
+          <td>М</td>
+          <td>водитель</td>
+          <td>01.01.1963</td>
+          <td>74323434</td>
+          <td>9232379</td>
+        </tr>
+        <tr id="clickme5">
+          <td>Крупин Сергей Ивановичь</td>
+          <td>М</td>
+          <td>водитель 2</td>
+          <td>01.01.1983</td>
+          <td>3234534</td>
+          <td>923123379</td>
+        </tr>
+
+    </table>
+
+
+  <script>
+$( "#clickme" ).click(function() {
+  $( "#clickme" ).hide( "fast", function() {
+
+  });
+});
+</script>
+
+<script>
+    $( "#clickme2" ).click(function() {
+      $( "#clickme2" ).hide( "fast", function() {
+    
+      });
+    });
+    </script>
+
+<script>
+    $( "#clickme3" ).click(function() {
+      $( "#clickme3" ).hide( "fast", function() {
+    
+      });
+    });
+    </script>
+
+
+<script>
+    $( "#clickme4" ).click(function() {
+      $( "#clickme4" ).hide( "fast", function() {
+    
+      });
+    });
+    </script>
+
+
+<script>
+    $( "#clickme5" ).click(function() {
+      $( "#clickme5" ).hide( "fast", function() {
+    
+      });
+    });
+    </script>
+<script>
+    $(document).ready(function(){
+
+      $("#show").click(function(){
+        $("tr").show();
+      });
+    });
+    </script>
+    <button id="show">Show</button>
+</body>
+</html>    
