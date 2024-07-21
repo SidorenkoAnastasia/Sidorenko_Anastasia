@@ -16,12 +16,19 @@
     }
 @media  screen and (max-width: 700px) {
     .header-pc {
-    display: none
+    display: none;
   }
   .header-mobile {
     display: block;
     color:rgb(66, 139, 229);
 
+  }
+
+  .wrapper2 {
+    display: grid;
+    grid-template-columns: 394px 126px ;
+    grid-template-rows: 20px;
+    font-size:10px;
   }
 }
     @media  screen and (min-width: 700px) {
@@ -32,12 +39,15 @@
   background-color: lightgrey;
     }
     .header-pc {
-    display: block
+    display: block;
   }
   .header-mobile {
-    display: none
+    display: none;
   } 
-  
+  .wrapper2{
+    display: none;
+  }
+
   .wrapper {
     display: grid;
     grid-template-columns: 277px ;
@@ -56,6 +66,11 @@
 </style>
 </head>
 <body>
+        <span class="wrapper2">25.10.2021, 12:02
+
+            <span>Title</span>
+
+        </span>
 
     <h1 align="center">HOW-TO: Программа на Python, Часть 1</h1>
     <div class="header-pc">
@@ -225,7 +240,11 @@
     Python для указания на блоки кода используются не круглые «(» и фигурные «{» скобки
     как в других языках программирования, а отступы.
 </p>   
+<span class="wrapper2">localhost:63342/SC1-94-21/RomanKovgan/Frameworks/base/index1.html#chapter3
 
+    <span></span>
+
+</span>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/css/foundation.min.css" crossorigin="anonymous">
  
